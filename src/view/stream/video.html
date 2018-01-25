@@ -1,0 +1,17 @@
+{% extends "lib/tag_html/layout.html" %}
+
+{% block title %} {{ video.name }} {% endblock %}
+
+{% block content %}
+  <h3>{{ video.name }}</h3>
+  <video controls>
+    <source src="/static/videos/{{ video.path }}">
+    <Update>your browser yo!</Update>
+  </video>
+<p>{{ video.desc }}</p>
+<div class="mf-buttons">
+  <a href="{% url action="deletevideo" video_id=video.id %}"> Remove this video </a>
+  <a href="{% url action="editvideo" video_id=video.id %}"> Edit this video </a>
+</div>
+{% endblock %}
+

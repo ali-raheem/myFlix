@@ -1,0 +1,21 @@
+{% extends "stream/index.html" %}
+
+{% block title %} Add video {% endblock %}
+
+{% block content %}
+<form method="POST">
+  <table>
+  {% input name="Name" %}
+  {% input name="Path" %}
+  {% input name="Description" %}
+  {% input name="Tags" %}
+  <tr>
+    {% block addvideo %}
+    <td colspan="2">
+      <input class="mf-table-button" type="submit" value="Add video"/>
+    </td>
+    {% endblock %}
+  </tr>
+  </table>
+</form>
+{% endblock %}

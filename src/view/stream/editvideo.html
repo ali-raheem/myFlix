@@ -1,0 +1,49 @@
+{% extends "lib/tag_html/layout.html" %}
+
+{% block title %} Edit video {% endblock %}
+
+{% block content %}
+<form method="POST">
+  <table>
+    <tr>
+      <td>
+	<label for="name">Name</label>
+      </td>
+      <td>
+	<input type="text" name="name" value="{{ video.name }}">
+      </td>
+    </tr>
+    <tr>
+      <td>
+	<label for="path">Path</label>
+      </td>
+      <td>
+	<input type="text" name="path" value="{{ video.path }}"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+	<label for="desc">Description</label>
+      </td>
+      <td>
+	<textarea name="desc"> {{ video.name }} </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+	<label for="tags">Tags</label>
+      </td>
+      <td>
+	<input type="text" name="tags" value="{{ video.tags }}">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      	<input type="hidden" name="id" value="{{ video.id }}"/>
+	<input class="mf-table-button" type="submit" value="Edit Video"/>
+      </td>
+    </tr>
+  </table>
+</form>
+
+{% endblock %}

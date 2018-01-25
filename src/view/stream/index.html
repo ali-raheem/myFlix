@@ -1,0 +1,23 @@
+{% extends "lib/tag_html/layout.html" %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+<div class="mf-video-list">
+  {% if videos %}
+  {% for video in videos %}
+  <div class="mf-video">
+    <a class="" href="{% url action="video" video_id=video.id %}"> {{ video.name }} <br/>
+      <video class="mf-video-mini" controls>
+	<source src="/static/videos/{{ video.path }}"/>
+	Update your browser yo!
+      </video> <br/>
+      {{ video.desc }}
+    </a>
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>
+{% endblock %}
+
+

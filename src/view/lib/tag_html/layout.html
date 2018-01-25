@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %} title {% endblock %}</title>
+    <link rel="StyleSheet" type="text/css" href="/static/StyleSheets/myFlix.css">
+  </head>
+  <body>
+      <div class="mf-topnav">
+	<a class="active" href="{% url action="" %}"> myFlix </a>
+	<a href="{% url action="../stream/addvideo" %}" > Add video </a>
+      </div>
+    <div class="mf-content mf-padding-32">
+      {% block content %}
+      content
+      {% endblock %}
+    </div>
+  </body>
+  <footer class="mf-padding-16 mf-center">
+    <p>myFlix - Copyright Ali Raheem 2018</p>
+  </footer>
+</html>

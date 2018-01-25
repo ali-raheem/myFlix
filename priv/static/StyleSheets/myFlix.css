@@ -1,0 +1,69 @@
+/*
+  Derived from W3schools css
+*/
+
+body {
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.mf-topnav {
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+a.active {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+a.hover {
+    color: #aa0000;
+}
+
+.mf-padding-32 {
+    padding: 32px;
+}
+.mf-padding-16 {
+    padding: 16px;
+}
+.mf-center {
+    text-align: center;
+}
+
+.mf-content {
+    background-color: #999999;
+}
+
+footer{
+    background-color: #111111;
+}
+
+.mf-table-button {
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px;
+    width: 100%;
+}
+
+.mf-video-mini {
+    width: 160px;
+    height: 120px;
+}
+
+.mf-buttons {
+    padding: 16px;
+}

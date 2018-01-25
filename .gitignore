@@ -1,0 +1,7 @@
+*~
+src/view/stream/*~
+src/controller/*
+src/model/*~
+prv/static/videos/*
+deps/
+log/
