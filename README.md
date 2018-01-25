@@ -6,6 +6,8 @@ Run your own personal web streaming site. Written in Erlang for performance on t
 
 You need to have erlang installed, put videos in /prv/static/videos/ run ./init.sh for production environment.
 
+By default it uses in-memory "mock" db you'll want to use an adapter to setup a persistant database for productions I use the bossDB postgrel adaptor and it was simple.
+
 ### To do
 
 I accidentally deleted all the css/html templates when I was moving to CB from node.js so alot to do.
