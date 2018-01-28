@@ -4,8 +4,8 @@ Run your own personal web streaming site. Written in Erlang for performance on t
 
 ## Usage
 
-* Install ChicagoBoss and make a new app
 * Copy over the src files.
+* [See here](https://github.com/ChicagoBoss/ChicagoBoss/wiki/Quickstart)
 * edit boss.config for your database and network interface binding needs.
 
 By default it uses in-memory "mock" db you'll want to use an adapter to setup a persistant database for productions I use the bossDB postgrel adaptor and it was simple.
